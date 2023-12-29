@@ -11,3 +11,4 @@ sources += $(local_src)
 programs += $(local_prog)
 
 $(local_prog): $(local_objs) $(libraries)
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
